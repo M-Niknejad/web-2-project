@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Study</title>
+    <link rel="stylesheet" href="./public/css/main.css" />
+  </head>
+  <body>
+    <!--start navbar-->
+    <div
+      class="w-full h-[92px] bg-tintBlue lg:flex border-b-4 border-b-zinc-800 hidden px-[5%]"
+    >
+      <div
+        class="w-[30%] h-full flex flex-wrap items-center justify-start gap-x-[8%]"
+      >
+        <img src="./public/images/svg/logo.svg" alt="" />
+        <label class="flex cursor-pointer gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="white"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="5" />
+            <path
+              d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"
+            />
+          </svg>
+          <input
+            id="btnn"
+            type="checkbox"
+            value="synthwave"
+            class="toggle theme-controller"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="white"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </label>
+      </div>
+      <nav class="w-[70%] h-full flex items-center justify-between gap-x-[2%]">
+        <div
+          class="w-fit h-full text-white text-base font-['poppins'] leading-[92px] capitalize hover:bg-blue-900 px-3 hover:text-white"
+        >
+          <a href="./index.html">Home</a>
+        </div>
+        <div
+          class="w-fit h-full text-[#bbbbcb] text-base font-['poppins'] leading-[92px] capitalize hover:bg-blue-900 px-3 hover:text-white"
+        >
+          <a href="./aboutus.html">aboutUs</a>
+        </div>
+        <div
+          class="w-fit h-full text-[#bbbbcb] text-base font-['poppins'] leading-[92px] capitalize hover:bg-blue-900 px-3 hover:text-white"
+        >
+          <a href="./features.html">features</a>
+        </div>
+        <div
+          class="w-fit h-full text-[#bbbbcb] text-base font-['poppins'] leading-[92px] capitalize hover:bg-blue-900 px-3 hover:text-white"
+        >
+          <a href="./pricing.html">pricing</a>
+        </div>
+        <div
+          class="w-fit h-full text-[#bbbbcb] text-base font-['poppins'] leading-[92px] capitalize hover:bg-blue-900 px-3 hover:text-white"
+        >
+          <a href="./privacy.html">faq</a>
+        </div>
+        <div
+          class="w-fit h-full text-[#bbbbcb] text-base font-['poppins'] leading-[92px] capitalize hover:bg-blue-900 px-3 hover:text-white"
+        >
+          <a href="./blog.html">blog</a>
+        </div>
+        <button
+          class="w-[170px] h-[60px] text-center border-white border-2 text-white text-base font-['poppins'] flex justify-center items-center capitalize hover:bg-blue-900 rounded-[40px] flex-shrink-0"
+        >
+          <a href="./contactUs.html">contact us</a>
+        </button>
+      </nav>
+    </div>
+    <div
+      class="w-full h-[92px] flex flex-wrap px-[5%] justify-between items-center bg-tintBlue relative lg:hidden"
+    >
+      <div
+        class="w-10 h-10 bg-white flex flex-wrap flex-col items-center justify-between py-[11px] rounded-md hover:bg-grey hover:cursor-pointer humberger"
+      >
+        <div class="w-5 h-[3px] bg-darkblue"></div>
+        <div class="w-5 h-[3px] bg-darkblue"></div>
+        <div class="w-5 h-[3px] bg-darkblue"></div>
+      </div>
+      <img src="./public/images/svg/logo.svg" alt="" />
+    </div>
+    <nav
+      class="w-[100%] h-fit pl-5 bg-tintBlue absolute left-[-100%] top-0 z-50 menu transition-all duration-300 lg:hidden"
+    >
+      <div
+        class="px-4 w-full h-15 text-white text-base leading-[64px] capitalize hover:bg-blue-900 text-left"
+      >
+        <a href="#">Home</a>
+      </div>
+      <div
+        class="px-4 w-full h-16 text-white text-base leading-[64px] capitalize hover:bg-blue-900 text-left"
+      >
+        <a href="./aboutus.html">about us</a>
+      </div>
+      <div
+        class="px-4 w-full h-16 text-white text-base leading-[64px] capitalize hover:bg-blue-900 text-left"
+      >
+        <a href="./features.html">features</a>
+      </div>
+      <div
+        class="px-4 w-full h-16 text-white text-base leading-[64px] capitalize hover:bg-blue-900 text-left"
+      >
+        <a href="./pricing.html">pricing</a>
+      </div>
+      <div
+        class="px-4 w-full h-16 text-white text-base leading-[64px] capitalize hover:bg-blue-900 text-left"
+      >
+        <a href="./privacy.html">faq</a>
+      </div>
+      <div
+        class="px-4 w-full h-16 text-white text-base leading-[64px] capitalize hover:bg-blue-900 text-left"
+      >
+        <a href="./blog.html">blog</a>
+      </div>
+      <div
+        class="px-4 w-full h-16 text-white text-base leading-[64px] capitalize hover:bg-blue-900 text-left"
+      >
+        <a href="./contactUs.html">contact us</a>
+      </div>
+      <div
+        class="w-10 h-10 bg-rose-500 absolute right-[20px] top-[20px] cursor-pointer text-center leading-10 text-white text-3xl rounded-lg close"
+      >
+        &times;
+      </div>
+    </nav>
+    <!--end navbar-->
+    <!--start header&summery-->
+    <div
+      class="w-full lg:pt-[220px] pt-[140px] lg:pl-[270px] pl-[180px] dark:bg-slate-800"
+    >
+      <div class="w-[40%]">
+        <h6 class="text-darkblue opacity-80 dark:text-white">
+          Web design and development
+        </h6>
+        <h2 class="text-darkblue mt-2 dark:text-white">
+          Finsweet Design case studies
+        </h2>
+      </div>
+      <p
+        class="w-[50%] font-medium opacity-70 text-darkblue mt-4 dark:text-white"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse.
+      </p>
+    </div>
+    <!--end header&summery-->
+    <!--start mainImage-->
+    <div class="w-full lg:py-12 py-8 dark:bg-slate-800">
+      <div
+        class="w-[66.5%] py-16 flex items-center justify-center bg-gradient-to-br from-[#F4EDE1] to-[#98B1C6] mx-auto"
+      >
+        <img
+          src="./public/images/casestudy/image-1.png"
+          alt=""
+          class="w-[83%]"
+        />
+      </div>
+    </div>
+    <!--end mainImage-->
+    <!--start information-->
+    <div class="w-full dark:bg-slate-800">
+      <div class="w-[66.5%] mx-auto">
+        <div class="w-full flex items-center justify-between gap-x-5">
+          <div class="w-[30%]">
+            <p class="font-medium opacity-80 text-darkblue dark:text-white">
+              Client
+            </p>
+            <h6 class="text-darkblue dark:text-white">facebook.com</h6>
+          </div>
+          <div class="w-[30%]">
+            <p class="font-medium opacity-80 text-darkblue dark:text-white">
+              Service
+            </p>
+            <h6 class="text-darkblue dark:text-white">Product Design</h6>
+          </div>
+          <div class="w-[30%]">
+            <p class="font-medium opacity-80 text-darkblue dark:text-white">
+              Deliverable
+            </p>
+            <h6 class="text-darkblue dark:text-white">
+              UI Screens, UX Flow & Prototype
+            </h6>
+          </div>
+        </div>
+        <div
+          class="w-full h-0 border-t-2 border-darkblue opacity-30 lg:mt-8 mt-5 dark:border-white"
+        ></div>
+      </div>
+    </div>
+    <!--end information-->
+    <!--start article-->
+    <div class="w-full lg:pt-24 pt-16 dark:bg-slate-800">
+      <div class="w-[52.5%] mx-auto">
+        <h3 class="text-darkblue dark:text-white">About the project</h3>
+        <p class="w-full opacity-70 text-darkblue mt-3 dark:text-white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <ul class="list-disc list-inside mt-8">
+          <li class="leading-7 opacity-70 text-darkblue mt-3 dark:text-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </li>
+          <li class="leading-7 opacity-70 text-darkblue mt-3 dark:text-white">
+            Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          </li>
+          <li class="leading-7 opacity-70 text-darkblue mt-3 dark:text-white">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+          </li>
+          <li class="leading-7 opacity-70 text-darkblue mt-3 dark:text-white">
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa
+          </li>
+        </ul>
+        <div
+          class="w-full flex items-center justify-center bg-gradient-to-br lg:py-10 py-6 from-[#F4EDE1] to-[#98B1C6] mt-16"
+        >
+          <img
+            src="./public/images/casestudy/image-2.png"
+            alt=""
+            class="w-[87%]"
+          />
+        </div>
+        <h3 class="text-darkblue lg:mt-16 mt-10 dark:text-white">
+          How we do it
+        </h3>
+        <p class="w-full opacity-70 text-darkblue mt-3 dark:text-white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <ul class="list-disc list-inside mt-8">
+          <li class="leading-7 opacity-70 text-darkblue mt-3 dark:text-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </li>
+          <li class="leading-7 opacity-70 text-darkblue mt-3 dark:text-white">
+            Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          </li>
+          <li class="leading-7 opacity-70 text-darkblue mt-3 dark:text-white">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+          </li>
+          <li class="leading-7 opacity-70 text-darkblue mt-3 dark:text-white">
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--end article-->
+    <!--start keywords-->
+    <div class="w-full pt-28 dark:bg-slate-800">
+      <div
+        class="w-fit h-[84px] mx-auto flex flex-wrap lg:gap-x-12 gap-x-[2vw] items-center justify-between border-y-2 border-[rgb(40,41,56,0.2)] dark:border-white"
+      >
+        <a
+          class="h-full text-darkblue hover:text-royalBlue leading-[84px] dark:text-white"
+          href="#"
+        >
+          Keywords
+        </a>
+        <a
+          class="h-full lg:text-[18px] font-medium text-darkblue hover:text-royalBlue opacity-70 leading-[84px] dark:text-white"
+          href="#"
+        >
+          Design
+        </a>
+        <a
+          class="h-full lg:text-[18px] font-medium text-darkblue hover:text-royalBlue opacity-70 leading-[84px] dark:text-white"
+          href="#"
+        >
+          UI/UX
+        </a>
+        <a
+          class="h-full lg:text-[18px] font-medium text-darkblue hover:text-royalBlue opacity-70 leading-[84px] dark:text-white"
+          href="#"
+        >
+          Wireframing
+        </a>
+        <a
+          class="h-full lg:text-[18px] font-medium text-darkblue hover:text-royalBlue opacity-70 leading-[84px] dark:text-white"
+          href="#"
+        >
+          Branding
+        </a>
+        <a
+          class="h-full lg:text-[18px] font-medium text-darkblue hover:text-royalBlue opacity-70 leading-[84px] dark:text-white"
+          href="#"
+        >
+          Development
+        </a>
+        <a
+          class="h-full lg:text-[18px] font-medium text-darkblue hover:text-royalBlue opacity-70 leading-[84px] dark:text-white"
+          href="#"
+        >
+          webflow
+        </a>
+      </div>
+    </div>
+    <!--end keywords-->
+    <!--start CTA-->
+    <div class="w-full flex pt-28 pb-32 justify-center dark:bg-slate-800">
+      <div
+        class="w-[52.75%] h-[308px] flex flex-col items-center justify-between"
+      >
+        <h2
+          class="w-full text-darkblue font-semibold text-center dark:text-white"
+        >
+          Let's build something great together
+        </h2>
+        <p
+          class="w-[74%] font-medium opacity-70 text-darkblue text-center dark:text-white"
+        >
+          Nullam vitae purus at tortor mattis dapibus. Morbi purus est,
+          ultricies nec dolor sit amet, scelerisque cursus purus.
+        </p>
+        <a href="./contactus.html" class="w-[230px] h-[64px] block">
+          <div
+            class="text-[18px] text-center bg-yellow text-[#1b1c2b] font-['poppins'] leading-[64px] capitalize rounded-[40px] block"
+          >
+            Contact Us
+          </div>
+        </a>
+      </div>
+    </div>
+    <!--end CTA-->
+     <!--start footer-->
+     <div class="w-full">
+      <div class="w-full bg-tintBlue pt-[96px] pl-[10%]">
+        <div
+          class="w-2/3 flex flew-wrap justify-between items-start "
+        >
+          <div class="w-[32%]">
+            <img
+              src="./public/images/svg/logo.svg"
+              alt=""
+              class="w-[160px] bg-cover lg:mb-4 mb-2"
+            />
+            <p class="lg:w-[76%] w-[90%] opacity-80 text-white line-clamp-3">
+              We are always open to discuss your project and improve your online
+              presence.
+            </p>
+          </div>
+          <div class="w-[32%]">
+            <h2 class="text-white capitalize font-semibold lg:mb-4 mb-2">
+              let's talk!
+            </h2>
+            <p
+              class="lg:w-[76%] w-[90%] opacity-80 text-white mb-4 line-clamp-3"
+            >
+              We are always open to discuss your project, improve your online
+              presence and help with your UX/UI design challenges.
+            </p>
+            <div class="w-[144px] flex flex-wrap justify-between">
+              <img src="./public/images/svg/facebook.svg" alt="" />
+              <img src="./public/images/svg/twiter.svg" alt="" />
+              <img src="./public/images/svg/insta.svg" alt="" />
+              <img src="./public/images/svg/linkedin.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-[32%] bg-yellow lg:pt-4 pt-3 lg:pl-9 pl-6 flex flex-wrap lg:gap-x-8 gap-x-4 min-w-[230px]"
+        >
+          <div>
+            <p class="lg:text-[18px] text-darkblue font-medium mb-3">
+              Email me at
+            </p>
+            <p class="text-darkblue opacity-80">contact@website.com</p>
+          </div>
+          <div>
+            <p class="lg:text-[18px] text-darkblue font-medium mb-3">Call us</p>
+            <p class="text-darkblue opacity-80">0927 6277 28525</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full h-[92px] flex flex-wrap gap-x-20 items-center justify-between px-[10%] dark:bg-slate-800"
+      >
+        <p class="text-darkblue font-medium dark:text-white">
+          Copyright 2022, Finsweet.com
+        </p>
+        <nav class="flex flex-wrap gap-x-8 items-center">
+          <a
+            href="./index.html"
+            class="text-base text-darkblue font-medium block dark:text-white"
+          >
+            Home
+          </a>
+          <a
+            href="./aboutus.html"
+            class="text-base text-darkblue font-medium block dark:text-white"
+          >
+            About us
+          </a>
+          <a
+            href="./features.html"
+            class="text-base text-darkblue font-medium block dark:text-white"
+          >
+            Features
+          </a>
+          <a
+            href="./pricing.html"
+            class="text-base text-darkblue font-medium block dark:text-white"
+          >
+            Pricing
+          </a>
+          <a
+            href="./privacy.html"
+            class="text-base text-darkblue font-medium block dark:text-white"
+          >
+            FAQ
+          </a>
+          <a
+            href="./blog.html"
+            class="text-base text-darkblue font-medium block dark:text-white"
+          >
+            Blog
+          </a>
+        </nav>
+      </div>
+    </div>
+    <!--end footer-->
+    <!--start script-->
+    <script>
+      let humberger = document.querySelector(".humberger");
+      humberger.addEventListener("click", function () {
+        document.querySelector(".menu").style.left = "0";
+      });
+    </script>
+    <script>
+      let close = document.querySelector(".close");
+      close.addEventListener("click", function () {
+        document.querySelector(".menu").style.left = "-100%";
+      });
+    </script>
+    <script>
+      btnn.addEventListener("click", () =>
+        document.body.classList.toggle("dark")
+      );
+    </script>
+    <!--end script-->
+  </body>
+</html>
